@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Courier New', Courier, monospace;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -22,7 +22,9 @@ body {
   
   section {
     padding: 2rem;
-    text-align: center;
+    text-align: left; /* Left-align for more code-like readability */
+    max-width: 800px;
+    margin: 0 auto;
   }
   
   h2 {
@@ -34,6 +36,20 @@ body {
     color: white;
     text-align: center;
     padding: 1rem 0;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+  }
+  
+  .emoji {
+    font-size: 1.2rem;
   }
   
   article {
@@ -51,5 +67,6 @@ body {
   
   article p {
     color: #555;
+    line-height: 1.5;
   }
   
