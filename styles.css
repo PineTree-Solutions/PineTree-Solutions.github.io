@@ -22,7 +22,7 @@ body {
   
   section {
     padding: 2rem;
-    text-align: left; /* Left-align for more code-like readability */
+    text-align: left;
     max-width: 800px;
     margin: 0 auto;
   }
@@ -68,5 +68,14 @@ body {
   article p {
     color: #555;
     line-height: 1.5;
+  }
+  
+  a {
+    color: #2e7d32;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
   }
   
