@@ -5,6 +5,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PineTree Solutions</title>
     <link rel="stylesheet" href="styles.css" />
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        const yearSpan = document.getElementById('currentYear');
+        if (yearSpan) {
+          yearSpan.textContent = new Date().getFullYear();
+        }
+      });
+    </script>
   </head>
   <body>
     <header>
@@ -12,6 +20,7 @@
         <h1>PineTree Solutions</h1>
         <nav>
           <a href="#about">About</a>
+          <a href="#services">Services</a>
           <a href="#products">Products</a>
           <a href="#contact">Contact</a>
         </nav>
@@ -20,22 +29,31 @@
     <main>
       <section id="about" class="fade-in">
         <h2>About Us</h2>
-        <p>
-          At PineTree Solutions, we specialize in creating innovative software
-          solutions tailored for developers. Our expertise lies in AI tools
-          designed to supercharge productivity, helping you code smarter, debug
-          less, and deliver faster. Empower your creativity and focus on what
-          truly matters: building amazing products.
-        </p>
+        <ul>
+          <li>We specialize in creating innovative software solutions tailored for developers.</li>
+          <li>Our expertise lies in AI tools designed to supercharge productivity.</li>
+          <li>We help you code smarter, debug less, and deliver faster.</li>
+          <li>Empower your creativity and focus on what truly matters: building amazing products.</li>
+        </ul>
+      </section>
+      <section id="services" class="fade-in">
+        <h2>Our Services</h2>
+        <ul>
+          <li>AI Development</li>
+          <li>DevOps / Security</li>
+          <li>Software Solutions</li>
+          <li>Data Engineering</li>
+          <li>Full Stack Applications</li>
+          <li>Plugins / Extensions</li>
+          <li>Bots</li>
+        </ul>
       </section>
       <section id="products" class="fade-in">
         <h2>Our Products</h2>
         <article>
           <h3>RepoToLLM</h3>
           <p>
-            RepoToLLM is a powerful VSCode extension that bridges your
-            repository with AI tools. It generates a detailed Markdown file
-            containing:
+            RepoToLLM is a powerful VSCode extension that bridges your repository with AI tools. It generates a detailed Markdown file containing:
           </p>
           <ul>
             <li>A comprehensive repository structure overview</li>
@@ -43,21 +61,14 @@
             <li>Complete code content for each file</li>
           </ul>
           <p>
-            Use the generated Markdown file to accelerate development cycles,
-            fix bugs faster, and gain valuable insights into your repository.
+            Use the generated Markdown file to accelerate development cycles, fix bugs faster, and gain valuable insights into your repository.
           </p>
           <p>
             <strong>Usage:</strong><br />
-            Open your Python project in VSCode and run the command
-            <code>Repo To LLM</code>. The generated
-            <code>REPO_TO_LLM.md</code> file is ready to be used with AI tools.
+            Open your Python project in VSCode and run the command <code>Repo To LLM</code>. The generated <code>REPO_TO_LLM.md</code> file is ready to be used with AI tools.
           </p>
           <p>
-            <a
-              href="https://github.com/PineTree-Solutions/RepoToLLM"
-              target="_blank"
-              >Learn more on GitHub</a
-            >
+            <a href="https://github.com/PineTree-Solutions/RepoToLLM" target="_blank">Learn more on GitHub</a>
           </p>
         </article>
       </section>
@@ -65,16 +76,12 @@
         <h2>Contact Us</h2>
         <p>
           Let’s connect and build the future together! Reach us on LinkedIn:<br />
-          <a href="https://www.linkedin.com/in/oren-zion/" target="_blank"
-            >Oren Zion</a
-          >
+          <a href="https://www.linkedin.com/in/oren-zion/" target="_blank">Oren Zion</a>
         </p>
       </section>
     </main>
     <footer>
-      <p>
-        &copy; 2024 PineTree Solutions. Built for developers, by developers.
-      </p>
+      <p>&copy; <span id="currentYear"></span> PineTree Solutions. Built for developers, by developers.</p>
     </footer>
   </body>
 </html>
