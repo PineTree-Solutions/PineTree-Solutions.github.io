@@ -8,6 +8,8 @@ body {
   padding: 0;
   background-color: #f4f4f4;
   color: #333;
+  font-size: 1.1rem; /* Increased font size */
+  line-height: 1.6; /* Improved line spacing */
 }
 
 header {
@@ -44,22 +46,26 @@ section {
   padding: 1.5rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   border-radius: 8px;
+  text-align: left; /* Align text to the left */
 }
 
 h2 {
   color: #003366;
+  text-align: center; /* Titles and subtitles remain centered */
 }
 
 ul {
-  list-style: none;
-  padding: 0;
-  text-align: left;
-  display: inline-block;
-  margin: 0 auto;
+  list-style-type: disc; /* Changed to bullets */
+  padding-left: 2rem; /* Added padding for alignment */
 }
 
 ul li {
   margin: 0.5rem 0;
+}
+
+p {
+  text-align: left; /* Align paragraphs to the left */
+  padding-left: 1.5rem; /* Add padding for better styling */
 }
 
 footer {
@@ -67,7 +73,10 @@ footer {
   background: #003366;
   color: white;
   text-align: center;
-  padding: 1rem 0;
+  display: flex; /* Enable Flexbox */
+  justify-content: center; /* Center content horizontally */
+  align-items: center; /* Center content vertically */
+  padding: 1rem 0; /* Optional: Adjust padding for better spacing */
   margin-top: 2rem;
 }
 
