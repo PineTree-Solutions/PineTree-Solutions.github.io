@@ -1,81 +1,100 @@
 body {
-    font-family: 'Courier New', Courier, monospace;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
-    background: white;
-    color: #333;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background: #f4f4f4;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+header {
+  background: #003366;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+nav a {
+  color: #fff;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #ffcc00;
+}
+
+main {
+  padding: 2rem 0;
+}
+
+section {
+  background: #fff;
+  margin: 2rem 0;
+  padding: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  animation: fadeIn 1s ease-in-out;
+}
+
+h2 {
+  color: #003366;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 0.5rem 0;
+}
+
+a {
+  color: #003366;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #ffcc00;
+}
+
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
   }
-  
-  header {
-    background: #2e7d32;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
+  to {
+    opacity: 1;
   }
-  
-  nav a {
-    color: white;
-    margin: 0 1rem;
-    text-decoration: none;
-  }
-  
-  section {
-    padding: 2rem;
-    text-align: left;
-    max-width: 800px;
-    margin: 0 auto;
-  }
-  
-  h2 {
-    color: #2e7d32;
-  }
-  
-  footer {
-    background: #444;
-    color: white;
-    text-align: center;
-    padding: 1rem 0;
-  }
-  
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  ul li {
-    margin: 0.5rem 0;
-    font-size: 1.1rem;
-  }
-  
-  .emoji {
-    font-size: 1.2rem;
-  }
-  
-  article {
-    margin: 1.5rem auto;
-    padding: 1rem;
-    max-width: 600px;
-    background: #f9f9f9;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-  }
-  
-  article h3 {
-    color: #2e7d32;
-  }
-  
-  article p {
-    color: #555;
-    line-height: 1.5;
-  }
-  
-  a {
-    color: #2e7d32;
-    text-decoration: none;
-  }
-  
-  a:hover {
-    text-decoration: underline;
-  }
-  
+}
