@@ -6,8 +6,8 @@
     <title>PineTree Solutions</title>
     <link rel="stylesheet" href="styles.css" />
     <script>
-      document.addEventListener('DOMContentLoaded', function() {
-        const yearSpan = document.getElementById('currentYear');
+      document.addEventListener("DOMContentLoaded", function () {
+        const yearSpan = document.getElementById("currentYear");
         if (yearSpan) {
           yearSpan.textContent = new Date().getFullYear();
         }
@@ -29,59 +29,116 @@
     <main>
       <section id="about" class="fade-in">
         <h2>About Us</h2>
+        <p>
+          At PineTree Solutions, we create innovative technology designed to
+          empower individuals, companies, and organizations across all domains.
+          Our services include:
+        </p>
         <ul>
-          <li>We specialize in creating innovative software solutions tailored for developers.</li>
-          <li>Our expertise lies in AI tools designed to supercharge productivity.</li>
-          <li>We help you code smarter, debug less, and deliver faster.</li>
-          <li>Empower your creativity and focus on what truly matters: building amazing products.</li>
+          <li>
+            <strong>AI Development:</strong> Intelligent, adaptive solutions
+            that redefine possibilities.
+          </li>
+          <li>
+            <strong>DevOps / Security:</strong> Reliable infrastructure and
+            secure deployment pipelines.
+          </li>
+          <li>
+            <strong>Software Solutions:</strong> Tailored applications built
+            with precision and efficiency.
+          </li>
+          <li>
+            <strong>Data Engineering:</strong> Transforming raw data into
+            actionable insights.
+          </li>
+          <li>
+            <strong>Full Stack Applications:</strong> Seamless web and mobile
+            experiences.
+          </li>
+          <li>
+            <strong>Plugins / Extensions:</strong> Tools that boost productivity
+            and integrate effortlessly.
+          </li>
+          <li>
+            <strong>Bots:</strong> Automation tools and chatbots for smarter
+            workflows.
+          </li>
         </ul>
+        <p>
+          We are driven by innovation and committed to excellence, helping our
+          clients achieve their goals faster and more effectively.
+        </p>
       </section>
       <section id="services" class="fade-in">
         <h2>Our Services</h2>
-        <ul>
-          <li>AI Development</li>
-          <li>DevOps / Security</li>
-          <li>Software Solutions</li>
-          <li>Data Engineering</li>
-          <li>Full Stack Applications</li>
-          <li>Plugins / Extensions</li>
-          <li>Bots</li>
-        </ul>
-      </section>
-      <section id="products" class="fade-in">
-        <h2>Our Products</h2>
-        <article>
-          <h3>RepoToLLM</h3>
-          <p>
-            RepoToLLM is a powerful VSCode extension that bridges your repository with AI tools. It generates a detailed Markdown file containing:
-          </p>
-          <ul>
-            <li>A comprehensive repository structure overview</li>
-            <li>A list of all files with their respective paths</li>
-            <li>Complete code content for each file</li>
-          </ul>
-          <p>
-            Use the generated Markdown file to accelerate development cycles, fix bugs faster, and gain valuable insights into your repository.
-          </p>
-          <p>
-            <strong>Usage:</strong><br />
-            Open your Python project in VSCode and run the command <code>Repo To LLM</code>. The generated <code>REPO_TO_LLM.md</code> file is ready to be used with AI tools.
-          </p>
-          <p>
-            <a href="https://github.com/PineTree-Solutions/RepoToLLM" target="_blank">Learn more on GitHub</a>
-          </p>
-        </article>
+        <div class="service-cards">
+          <div class="service-card">
+            <h3>AI Development</h3>
+            <p>
+              Pushing the boundaries of what's possible with AI. We craft
+              intelligent solutions that learn, adapt, and scale to meet your
+              business needs.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>DevOps / Security</h3>
+            <p>
+              Seamless deployment pipelines, robust infrastructure, and security
+              you can trust. We make reliability a standard.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Software Solutions</h3>
+            <p>
+              Custom software tailored for your success. From idea to execution,
+              we deliver with precision and efficiency.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Data Engineering</h3>
+            <p>
+              Transforming raw data into actionable insights. Our pipelines are
+              built for speed, accuracy, and scalability.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Full Stack Applications</h3>
+            <p>
+              Web or mobile, front to back—we create polished, end-to-end
+              applications designed to impress and perform.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Plugins / Extensions</h3>
+            <p>
+              Enhance your workflow with plugins and extensions that save time,
+              improve productivity, and integrate effortlessly.
+            </p>
+          </div>
+          <div class="service-card">
+            <h3>Bots</h3>
+            <p>
+              Chatbots, automation tools, and beyond. Let us build bots that
+              engage, respond, and simplify complex workflows.
+            </p>
+          </div>
+        </div>
       </section>
       <section id="contact" class="fade-in">
         <h2>Contact Us</h2>
         <p>
           Let’s connect and build the future together! Reach us on LinkedIn:<br />
-          <a href="https://www.linkedin.com/in/oren-zion/" target="_blank">Oren Zion</a>
+          <a href="https://www.linkedin.com/in/oren-zion/" target="_blank"
+            >Oren Zion</a
+          >
         </p>
       </section>
     </main>
     <footer>
-      <p>&copy; <span id="currentYear"></span> PineTree Solutions. Built for developers, by developers.</p>
+      <p>
+        &copy; <span id="currentYear"></span> PineTree Solutions. Built for
+        developers, by developers.
+      </p>
     </footer>
   </body>
 </html>
