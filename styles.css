@@ -6,7 +6,7 @@ body {
   justify-content: center;
   margin: 0;
   padding: 0;
-  background-color: #111;
+  background: linear-gradient(120deg, #111 60%, #ff6600 100%);
   color: #fff;
   font-size: 1.1rem;
   line-height: 1.6;
@@ -56,7 +56,7 @@ main {
 }
 
 .hero {
-  background: linear-gradient(90deg, #111 60%, #ff6600 100%);
+  background: none;
   border-radius: 16px;
   margin: 2rem auto 2.5rem auto;
   padding: 2.5rem 2rem 2rem 2rem;
@@ -64,33 +64,15 @@ main {
 }
 .hero-content {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: flex-start;
+  justify-content: space-between;
   gap: 2.5rem;
   flex-wrap: wrap;
-}
-.hero-photo {
-  flex: 0 0 160px;
-  width: 160px;
-  height: 160px;
-  border-radius: 50%;
-  overflow: hidden;
-  background: #222;
-  border: 4px solid #ff6600;
-  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-.hero-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 50%;
 }
 .hero-text {
   max-width: 500px;
   text-align: left;
+  flex: 2 1 300px;
 }
 .hero-text h2 {
   color: #ff6600;
@@ -120,9 +102,38 @@ main {
   color: #111;
   transform: translateY(-2px) scale(1.04);
 }
+.hero-photo-contact {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 1 1 180px;
+  min-width: 160px;
+  gap: 1.2rem;
+}
+.hero-photo {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  overflow: hidden;
+  background: #222;
+  border: 4px solid #ff6600;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.hero-contact {
+  margin-top: 0.5rem;
+}
 
 section {
-  background: #181818;
+  background: none;
   margin: 1.5rem auto;
   padding: 1.7rem 1.5rem;
   box-shadow: 0 2px 8px rgba(0,0,0,0.18);
@@ -214,16 +225,26 @@ a:hover {
     padding: 1.2rem 0.5rem 1rem 0.5rem;
     margin: 1rem 0 1.5rem 0;
     border-radius: 0;
+    background: none;
   }
   .hero-content {
     flex-direction: column;
     gap: 1.2rem;
     align-items: center;
+    justify-content: center;
+  }
+  .hero-photo-contact {
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    width: 100%;
   }
   .hero-photo {
     width: 120px;
     height: 120px;
-    flex: none;
+  }
+  .hero-contact {
+    margin-top: 0.5rem;
   }
   .hero-text {
     max-width: 100%;
@@ -246,6 +267,7 @@ a:hover {
   section {
     padding: 1rem 0.5rem;
     border-radius: 0;
+    background: none;
   }
   ul {
     padding-left: 1.2rem;
